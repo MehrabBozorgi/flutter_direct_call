@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:url_launcher/url_launcher.dart';
+import 'package:url_launcher/url_launcher_string.dart';
 
 void main() {
   runApp(const MyApp());
@@ -34,7 +34,7 @@ class FirstScreen extends StatelessWidget {
                   iconData: Icons.call,
                   color: Colors.green,
                   onPress: () {
-                    launch("tel://${09123456789}");
+                    launchUrlString("tel://${09123456789}");
                   },
                 ),
               ),
